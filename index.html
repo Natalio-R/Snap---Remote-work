@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      position: absolute;
+      font-size: 14px;
+      text-align: center;
+      bottom: 1rem;
+      left: 0;
+      right: 0;
+    }
+
+    .attribution a {
+      color: hsl(0, 100%, 57%);
+      font-weight: var(--w700);
+    }
+
+    .attribution a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <nav>
+      <img src="./images/logo.svg" alt="Logotipo snap" title="snap">
+      <ul class="menu">
+        <li class="m-1"><a class="menu-link" href="#">Features <img src="./images/icon-arrow-down.svg"></a>
+          <ul class="submenu">
+            <li><a href="#"><img src="./images/icon-todo.svg" alt="Icono Todo List">&nbsp;&nbsp;&nbsp;Todo
+                List</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="Icono Calendar">&nbsp;&nbsp;&nbsp;Calendar</a>
+            </li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="Icono Remunders">&nbsp;&nbsp;&nbsp;Reminders</a>
+            </li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="Icono Planning">&nbsp;&nbsp;&nbsp;Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li class="m-1"><a class="menu-link" href="#">Company <img src="./images/icon-arrow-down.svg"></a>
+          <ul class="submenu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a class="menu-link" href="#">Careers</a></li>
+        <li><a class="menu-link" href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="access">
+      <a href="#" class="btn btn-login">Login</a>
+      <a href="#" class="btn btn-register">Register</a>
+    </div>
+  </header>
+  <main>
+    <div class="infor">
+      <h1>Make <br> remote wokrk</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <a href="#" class="btn btn-learn">Learn more</a>
+      <div class="brands">
+        <img src="./images/client-databiz.svg" alt="Logotipo databiz">
+        <img src="./images/client-audiophile.svg" alt="Logotipo audiophile">
+        <img src="./images/client-meet.svg" alt="Logotipo meet">
+        <img src="./images/client-maker.svg" alt="Logotipo maker">
+      </div>
+    </div>
+    <!--<img src="./images/image-hero-desktop.png" alt="">-->
+  </main>
+  <foter class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded with ❤️ by <a href="https://natalio.netlify.app" target="_blank">Natalio R</a>.
+  </foter>
 </body>
+
 </html>
