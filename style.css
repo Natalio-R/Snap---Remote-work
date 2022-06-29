@@ -31,6 +31,10 @@ ul {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: var(--Family);
   background-color: var(--AlmostWhite);
 }
@@ -41,6 +45,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem 0;
+  width: 100%;
 }
 
 header nav {
@@ -69,7 +74,11 @@ header nav ul.menu li a.menu-link {
 }
 
 header nav ul.menu li:hover a.menu-link {
-  font-weight: var(--w700);
+  color: var(--AlmostBlack);
+}
+
+header nav ul.menu li:hover a.menu-link img {
+  transform: rotate(180deg);
 }
 
 header nav ul.submenu {
@@ -93,10 +102,92 @@ header nav ul.submenu li a {
 }
 
 header nav ul.submenu li:hover a {
-  font-weight: var(--w700);
+  color: var(--AlmostBlack);
 }
 
 header nav ul li.m-1:hover ul.submenu {
   display: flex;
   visibility: visible;
+}
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  border-radius: 14px;
+  color: var(--MediumGray);
+  cursor: pointer;
+  font-weight: var(--w500);
+}
+
+.btn:hover {
+  color: var(--AlmostBlack);
+}
+
+.btn.btn-register {
+  border: 2px solid var(--MediumGray);
+  margin-left: 1rem;
+}
+
+.btn.btn-register:hover {
+  border: 2px solid var(--AlmostBlack);
+}
+
+.btn.btn-learn {
+  border: 2px solid var(--AlmostBlack);
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  padding: 1rem 1.8rem;
+  font-size: 18px;
+}
+
+.btn.btn-learn:hover {
+  border: 2px solid var(--AlmostBlack);
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+main .infor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 860px;
+  padding-top: 10rem;
+}
+
+main .infor h1 {
+  font-size: 80px;
+  color: var(--AlmostBlack);
+}
+
+main .infor p {
+  font-size: 18px;
+  font-weight: var(--w500);
+  color: var(--MediumGray);
+  margin: 4rem 0;
+  line-height: 26px;
+  width: 450px;
+}
+
+main .infor .brands {
+  margin-top: 7rem;
+}
+
+main .infor .brands img {
+  margin-right: 2.5rem;
+}
+
+main .image {
+  width: 550px;
+}
+
+main .image img {
+  width: 100%;
 }
